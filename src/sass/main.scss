@@ -1,0 +1,14 @@
+/* CSS Entry Point */
+.stars {
+	width: 1200px;
+	height: 900px;
+	background-color: darken(#223366, 12%);
+	position: relative;
+	.star {
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		// background-color: red;
+		position: absolute;
+	}
+}
