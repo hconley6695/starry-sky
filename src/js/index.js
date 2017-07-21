@@ -7,29 +7,7 @@ import Star from './star';
 // var littleStar = new Star();
 // console.log(littleStar);
 
-// function createStar() {
-// 	var littleStar = new Star();
-
-// 	var left = littleStar.coordinates.x + 'px';
-// 	console.log(left);
-// 	var top = littleStar.coordinates.y + 'px';
-// 	console.log(top);
-// 	var width = littleStar.size.w + 'px';
-// 	console.log(width);
-// 	var height = littleStar.size.h + 'px';
-// 	var $div = $('<div class="color"/>');
-// 	$('.stars').append($div);
-// 	$("div.color").css("background-color", "white");
-// 	$("div.color").css("height", height);
-// 	$("div.color").css("width", width);
-// 	$("div.color").css("left", left);
-// 	$("div.color").css("top", top);
-
-// }
-
-
-for (var i = 0; i <= 100; i++) {
-
+function createStar() {
 	var littleStar = new Star();
 
 	var left = littleStar.coordinates.x + 'px';
@@ -39,31 +17,46 @@ for (var i = 0; i <= 100; i++) {
 	var width = littleStar.size.w + 'px';
 	console.log(width);
 	var height = littleStar.size.h + 'px';
-	var $div = $('<div class="color"/>');
-	$('.stars').append($div);
+	console.log(height);
+	var $div = $('<div class="color star"></div>');
+
+	// $('.night-sky').append($div);	
+	console.log($div);
+
 	$("div.color").css("background-color", "white");
 	$("div.color").css("height", height);
 	$("div.color").css("width", width);
 	$("div.color").css("left", left);
 	$("div.color").css("top", top);
-	
-	// var littleStar = new Star();
+	$('.night-sky').append($div);	
 
-	// var $star = $('<div/>')
-	// $(littleStar).addClass('star');
-	// $('.stars').append($star);
-
-	// var {x, y} = star.coordinates;
-	// var {w, h} = star.size;
-	// $star.css = ({
-	// 	top: `${y}px`;
-	// 	left: `${x}px`;
-	// 	width: `${w}px`;
-	// 	height: `${h}px`;
-	// });
-	// console.log(littleStar);
-	// $('.app').append($star);
-	// createStar();
 }
+createStar();
+createStar();
+createStar();
 
+// $('.night-sky').append($div);
+
+for (var i = 0; i <= 5; i++) {
+
+// 	var littleStar = new Star();
+
+// 	var left = littleStar.coordinates.x + 'px';
+// 	var top = littleStar.coordinates.y + 'px';
+// 	var width = littleStar.size.w + 'px';
+// 	var height = littleStar.size.h + 'px';
+// 	var $div = $('<div class="color star"></div>');
+
+// 	$('.stars').append(littleStar);
+	
+// 	$("div.color").css("background-color", "white");
+// 	$("div.color").css("height", height);
+// 	$("div.color").css("width", width);
+// 	$("div.color").css("left", left);
+// 	$("div.color").css("top", top);
+// 	$('.stars').append($div);	
+
+	// createStar();
+
+}
 
