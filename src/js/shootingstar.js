@@ -1,9 +1,11 @@
-import Star, MX_WIDTH, MX_HEIGHT from './star';
+import  Star, {MX_WIDTH, MX_HEIGHT } from './star';
 
-class ShootingStar extends Star {
-	constructor() {
-		super();
+export default class ShootingStar extends Star {
+	constructor(props) {
+		super(props);
 		// this.direction = x;
+		console.log(props);
 		this.speed = Math.floor((Math.random() * 4) + 1) * 83;
+
 	}
 }
